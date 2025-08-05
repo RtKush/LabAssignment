@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>5th Sem Group Members</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #eef2f3, #8e9eab);
+      color: #1a1a1a;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 60px 20px 50px 20px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .container {
+      padding: 30px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      width: 280px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 1s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .name {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #1a237e;
+    }
+
+    .role {
+      font-size: 1rem;
+      font-style: italic;
+      margin: 10px 0;
+      color: #555;
+    }
+
+    .roll {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #222;
+    }
+
+    .section-title {
+      text-align: center;
+      margin: 10px 0 0;
+      font-size: 2rem;
+      font-weight: 600;
+      color: #0d47a1;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background-color: #e3e3e3;
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        width: 90%;
+      }
+
+      .section-title {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>5th Semester Project Group</h1>
+  <p>Meet the aspiring developers and innovators of our team</p>
+</header>
+
+<!-- Highlighted Member -->
+<div class="container" style="padding-bottom: 10px;">
+  <div class="card">
+    <div class="name">Kush Gupta</div>
+    <div class="role">Aspiring Java Full Stack Developer</div>
+    <div class="roll">Roll No: 23223036</div>
+  </div>
+</div>
+
+<!-- Section Title -->
+<div class="section-title">Team Members</div>
+
+<!-- Other Team Members -->
+<div class="container">
+  <div class="card">
+    <div class="name">Kush Kumar</div>
+    <div class="role">MERN Developer | AI ML Enthusiast</div>
+    <div class="roll">Roll No: 23223037</div>
+  </div>
+
+  <div class="card">
+    <div class="name">Karan Agrawal</div>
+    <div class="role">Frontend Wizard | React & UI/UX Designer</div>
+    <div class="roll">Roll No: 23223030</div>
+  </div>
+
+  <div class="card">
+    <div class="name">Utkarsh</div>
+    <div class="role">DevOps Learner | Cloud Enthusiast</div>
+    <div class="roll">Roll No: 23223095</div>
+  </div>
+
+  <div class="card">
+    <div class="name">Pradeep Solanki</div>
+    <div class="role">AI/ML Explorer | Data Science Lover</div>
+    <div class="roll">Roll No: 23223052</div>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 NIT Raipur | MCA 5th Semester Group | Created with ❤ by Kush Gupta & Team
+</footer>
+
+</body>
+</html>
